@@ -6,12 +6,17 @@ This is my project applying Linear Regression on California Housing Dataset
 git clone https://github.com/hoangcaobao/MTH317H_Project.git
 ```
 
-### 2. Download necessary libraries
+### 2. Change directory
+```
+cd MTH317H_Project
+```
+
+### 3. Download necessary libraries
 ```
 pip install -r requirements.txt
 ```
 
-### 3. Run code
+### 4. Run code
 ```
 python3 main.py
 ```
