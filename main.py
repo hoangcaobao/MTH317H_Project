@@ -13,7 +13,7 @@ y=np.array(y)
 
 #add one to each data of X 
 one=np.ones((X.shape[0], 1))
-X=np.concatenate((X, one), axis=1)
+X=np.concatenate((one, X), axis=1)
 
 #split data
 X_train, X_test, y_train, y_test =  train_test_split(X, y, test_size=0.2, random_state=42)
