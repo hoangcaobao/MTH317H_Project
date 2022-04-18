@@ -4,6 +4,7 @@ from sklearn.model_selection import train_test_split
 
 #read file csv
 df=pd.read_csv("housing.csv")
+df = df.dropna()
 
 #create X and y matrix
 X=df.iloc[:, :-2]
@@ -25,3 +26,4 @@ w=np.dot(np.dot(np.linalg.pinv(np.dot(X_train.T, X_train)), X_train.T), y_train)
 df = pd.DataFrame({'median_house_value': y_test.flatten(),
                    'predicted': np.dot(X_test, w).flatten()})
 df.to_csv("result.csv",index=False)
+print(X_test[:100])
